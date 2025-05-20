@@ -1,7 +1,9 @@
 import { createClient } from '@supabase/supabase-js'
 
-export const supabaseUrl = 'YOUR_URL'
-const supabaseKey = 'YOUR_TOKEN'
+
+const token = import.meta.env.VITE_TOKEN
+export const supabaseUrl = 'https://rfhtbdhpgwsvvxfkcyvu.supabase.co'
+const supabaseKey = token
 const supabase = createClient(supabaseUrl, supabaseKey)
 
 export default supabase;
